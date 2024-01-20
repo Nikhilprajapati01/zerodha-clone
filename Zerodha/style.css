@@ -1,0 +1,403 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap');
+
+
+
+*{
+    font-family: "Inter",serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.header{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 2px 1px 2px #eee;
+    /* position: relative; */
+    position: fixed;
+    padding: 0px 14vw;
+    z-index: 1;
+}
+
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    
+  
+}
+.logo img{
+    width: 150px ;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+}
+.nevbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.nevbar-ul{
+    display: flex;
+    gap: 2rem;
+}
+.nevbar-ul li{
+    list-style: none;
+    display: block;
+}
+.nevbar-ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    letter-spacing: .1rem;
+    
+}
+.nevbar-ul li a:hover{
+    cursor: pointer;
+    color: rgb(89, 89, 227);
+ 
+}
+.nevbar-ul i{
+   font-size: 1.4rem;
+   font-weight: 600;
+
+}
+
+.nevbar-ul i:hover{
+    cursor: pointer;
+}
+
+/*  landing page  */
+
+
+
+.landing{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 8%; */
+    overflow:  hidden;
+    
+}
+
+.landing-container{
+    
+    margin-top: 5rem;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.landing-container .landing-img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.landing-text{
+    text-align: center;
+}
+.landing-text h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.landing-text p{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+.landing-button button{
+    padding: .7rem 1.7rem;
+    background-color: #387eD1;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+
+
+
+
+
+
+/* markiting section  */
+
+.markiting{
+   width:  100vw;
+   padding: 0 25px 120px 20px;
+   overflow: hidden;
+   margin-top: 4rem;
+
+}
+.row-between-v-align{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 7rem;
+    
+
+}
+.img-margin{
+    width: 32%;
+    display: flex;
+    align-items: center;
+}
+.img-margin img{
+    width: 100%;
+}
+
+.column-text{
+    display: flex;
+   flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+.column-text h1{
+    font-size: 2rem;
+  
+}
+  p,  li{
+    font-size: 1.1rem;
+    letter-spacing: normal;
+}
+
+.list{
+    padding-left: 1rem;
+    display: flex;
+    gap: 3rem;
+}
+.img-markiting{
+    width: 100%;
+  
+}
+
+.img-markiting img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* ecoststem section 
+ */
+
+ .ecosystem{
+    width: 100vw;
+    /* padding: 0px 20px 20px; */
+
+ }
+ .eco-envirement{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    padding:  0px 3rem 0rem 7rem;
+ }
+
+ .eco-text{
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+ .eco-text h1{
+    font-size: 2.6rem;
+    padding-bottom: 3rem;
+ }
+ .eco-image{
+      width: 80vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 2rem;
+     align-items: center;
+
+ }
+ .eco-image-atag {
+    width: 100%;
+    height: 100%;
+   
+    
+    
+}
+.eco-image-atag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: contain;
+    z-index: 10;
+ }
+ 
+ .eco-image-anotheratag a{
+    text-decoration: none;
+    padding-left: 2rem;
+ }
+
+ @media (max-width:1270px) {
+    .eco-envirement{
+        width: 100vw;
+        padding:  0px 0rem 0rem 1rem;
+     }
+     .eco-text{
+        width: 60vw;
+    }
+ }
+
+ @media (max-width:1000px) {
+    .header{
+        padding: 20px;
+    }
+    .header{
+        padding: 1rem;
+    }
+    .logo{
+      width: 50%;
+      height: 100%;
+    }
+    .logo img{
+        width: 150px ;
+        height: auto;
+    }
+    .nevbar-ul li{
+        display: none;
+    }
+   
+    .landing-container{
+        margin-top: -9rem;
+          width: 80vw;
+          
+    }
+    .landing-container .landing-img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .landing-text h1{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .landing-text p{
+        font-size: .9rem;
+        font-weight: 500;
+        letter-spacing: .1rem;
+    }
+
+
+    .eco-text{
+        width: 95%;
+    }
+    .eco-image-atag{
+        width: 90vw;
+        text-align: center;
+    }
+    .eco-image img{
+        z-index: 2;
+        width: 60%;
+        object-fit: cover;
+    }
+   .eco-envirement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+   }
+ }
+
+
+ @media (max-width:900px) {
+    .row-between-v-align{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .markiting{
+        margin-top: -10rem;
+    }
+
+    .img-margin{
+        width: 60vw;
+    }
+    .img-margin img {
+        width: 100%;
+    }
+
+    .column-text{
+        width: 70vw;
+    }
+}
+ @media (max-width:500px){
+  
+    .landing{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+    .landing-container { 
+        width: 100vw;
+        gap: 2rem;
+        margin-top: -10rem;
+        text-align: center;
+  }
+    .landing-img{
+      width: 100%;
+      object-fit: cover;
+  }
+
+
+
+
+
+  .markiting{
+    margin-top: -10rem;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.column-text{
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+          .eco-envirement{
+            margin-top: -6rem;
+          }
+          .eco-image{
+            margin-top: 2rem;
+          }
+ }
