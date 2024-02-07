@@ -98,7 +98,7 @@ body{
 .landing-container{
     
     margin-top: 8rem;
-    width: 65vw;
+    width: 950px;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -141,7 +141,7 @@ body{
 
 .menu{
     width: 48%;
-    height: 43%;
+    height: 250px;
     background-color: #fff;
     position: absolute;
     top: 7%;
