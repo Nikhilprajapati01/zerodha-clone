@@ -1,28 +1,14 @@
-const showmenu = document.querySelector('.ri-menu-line')
+const btn = document.querySelector('.ri-menu-line')
+const activelist = document.querySelector(".landing")
 
-// show.style.display = "none"
-
-function showclick(){
-
-    console.log("asdd")
-    document.getElementsByClassName("menu").classList.toggle("hide");
+const turbelmenu = function() {
+ activelist.classList.toggle("active");
 }
 
-showmenu.addEventListener("click",function(){
-      showclick()
-})
+
+
+btn.addEventListener('click',() => turbelmenu())
 
 
 
 
-// const check = true;
-// showmenu.addEventListener("click", function(){
-//     if(check == true){
-//         show.style.display = "block"
-//         check = false;
-//     }
-//     else{
-//         show.style.display = "none"
-//         check = true;
-//     }
-// })
